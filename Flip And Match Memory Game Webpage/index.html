@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip-and-Match Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#selected">Selected</a></li>
+            <li><a href="#faq">F.A.Q</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#contact">Connect</a></li>
+            <div class="close-icon" onclick="toggleMenu()">✖</div>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div id="heading">
+            <h1>Memory Card Game</h1>
+        </div>
+
+        <div class="game-info">
+            <p>Score: <span id="score">0</span></p>
+            <p>Time: <span id="timer">0</span> s</p>
+            <p>Moves: <span id="moves">0</span></p>
+            <button id="resetBtn">Reset Game</button>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+    </section>
+
+    <!-- Selected Section -->
+    <section id="selected">
+        <div class="selected-container">
+            <h2>Top Picks for You</h2>
+            <p>Discover the best handpicked games specially curated for you!</p>
+            <div class="selected-cards">
+                <div class="selected-card">
+                    <img src="images/game1.png" alt="Game 1">
+                    <h3>Brain Teasers</h3>
+                    <p>Sharpen your mind with fun puzzles and challenges.</p>
+                </div>
+                <div class="selected-card">
+                    <img src="images/game2.png" alt="Game 2">
+                    <h3>Adventure Quest</h3>
+                    <p>Embark on an epic journey and explore new worlds.</p>
+                </div>
+                <div class="selected-card">
+                    <img src="images/game3.png" alt="Game 3">
+                    <h3>Speed Match</h3>
+                    <p>Test your reflexes with this fast-paced card matching game.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">How do I play the game? <span>+</span></h3>
+                <p class="faq-answer">Click on a card to flip it and match pairs to win.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Can I play this on mobile? <span>+</span></h3>
+                <p class="faq-answer">Yes, our game is fully responsive and works on all devices.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Is this game free to play? <span>+</span></h3>
+                <p class="faq-answer">Yes! This game is completely free with no hidden costs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="team-container">
+            <h2>Meet Our Team</h2>
+            <p>Our passionate team of developers and designers!</p>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="images/member1.png" alt="Team Member 1">
+                    <h3>Roni Seikh</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member2.png" alt="Team Member 2">
+                    <h3>Roni Seikh</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member3.jpg" alt="Team Member 3">
+                    <h3>Roni Seikh</h3>
+                    <p>Game Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info">
+        <div class="info-container">
+            <h2>About Our Game</h2>
+            <p>This memory card game is designed to improve cognitive skills while providing fun for all ages.</p>
+            <ul>
+                <li>Boosts memory and concentration</li>
+                <li>Enjoyable for kids and adults alike</li>
+                <li>Regularly updated with new themes and challenges</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Have any questions or feedback? Reach out to us!</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
